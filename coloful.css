@@ -1,0 +1,119 @@
+.ButtonForAboutMe {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid #e0e0e0; 
+    color: #4d4d4d; 
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.ButtonForAboutMe:hover {
+    background-color: #ffffff;
+    color: #333333; 
+    border-color: #bbbbbb; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #dcdcdc, #c0c0c0);
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden; 
+    padding-top: 100px; 
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+
+.top-font {
+    color: #333333; 
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    animation: glow 2s infinite alternate;
+    position: fixed; 
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    transition: font-size 0.3s ease, text-shadow 0.3s ease; 
+}
+
+
+.AboutMe {
+    font-size: 30px;
+    text-align: justify;
+    color: #4d4d4d; 
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    max-width: 800px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    border: 1px solid #e0e0e0; 
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 10px 30px rgba(200, 200, 200, 0.5);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.DivForAM {
+    padding: 40px;
+    background-color: rgba(230, 230, 230, 0.4); 
+    border-radius: 25px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 20px rgba(200, 200, 200, 0.5);
+    max-width: 900px;
+    backdrop-filter: blur(15px);
+    margin-bottom: 100px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.DivForAM:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .top-font {
+        font-size: 50px;
+    }
+    .AboutMe {
+        font-size: 24px;
+        padding: 20px;
+    }
+    .DivForAM {
+        padding: 30px;
+    }
+}
